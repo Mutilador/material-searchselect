@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8" />
+    <title>Material design searchable multiselect component</title>
+    
+    <link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons">       
+    <link rel="stylesheet" href="material-searchselect.min.css" />
+</head>
+<body>
+ <div class="searchselect">
+                    <label class="searchselect-label">Select machines</label>
+                    <select id="selectMachines2" multiple="">
+                        <option value="a">Option 1</option>
+                        <option value="b">Option 2</option>
+                        <option value="c">Option 3</option>
+                        <option value="e">Option 5</option>
+                        <option value="f">Option 6</option>
+                    </select>
+                </div>
+    
+<script type="text/javascript" src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+<script type="text/javascript" src="material-searchselect.min.js"></script>
+<script type="text/javascript">
+$(".searchselect").searchselect({
+separator: ",",
+showCheckboxes: true
+});
+</script>
+
+</body>
+</html>
