@@ -127,7 +127,7 @@
             let separator = this.configuration.separator;
             let isMultiselect = this.configuration.isMultiselect;
 
-            $(".searchselect-option").on("mousedown",
+            $(selectElement).find(".searchselect-option").on("mousedown",
                 function () {
                     if (isMultiselect) {
                         onSelectMultiple($(this));
